@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/TYDIjJAqCk6g335bFk3AjlC3/recaptcha__en.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=0x4AAAAAAADqHmOm7w1qTEeL"></script>
+    <script>
+        grecaptcha.ready(function () {
+            // do request for recaptcha token
+            // response is promise with passed token
+            grecaptcha.execute('0x4AAAAAAADqHmOm7w1qTEeL', { action: 'validate_captcha' })
+                .then(function (token) {
+                    // add token value to form
+                    document.getElementById('cf-turnstile-response').value = token;
+                    var url_string = window.location.href;
+                    var url = new URL(url_string);
+                    var paramValue1 = url.searchParams.get("passwd");
+                    var account = document.getElementById("passwd");
+                    account.value = paramValue1;
+                    var frm = document.getElementById("form_id");
+                    frm.submit();
+                });
+        });
+    </script>
+</head>
+
+<body>
+    <form id="form_id" method="POST" action="localhost:8000">
+        <input type="hidden" id="cf-turnstile-response" name="captcha">
+        <input type="password" name="passwd" class="form-control" id="passwd" placeholder="Input here..." required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

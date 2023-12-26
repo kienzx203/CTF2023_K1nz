@@ -1,0 +1,5 @@
+services:
+    cfb64:
+        build: .
+        ports:
+            - "60124:60124"

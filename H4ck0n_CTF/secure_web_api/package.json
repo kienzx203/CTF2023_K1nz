@@ -1,0 +1,15 @@
+{
+    "name": "secure-web-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "UNLICENSED",
+    "type": "module",
+    "scripts": {
+        "start-public-app": "node public-app/index.js",
+        "start-secure-backend": "node secure-backend/index.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2"
+    }
+}

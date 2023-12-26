@@ -1,0 +1,10 @@
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection#extract-data-information
+
+User.find({
+			session: token
+		}).then((user) => {
+			if (user.length == 1) {
+				return res.render('dashboard');
+			}
+
+- Vận dụng User.find chúng ta có thể sử dụng regex để leak flag

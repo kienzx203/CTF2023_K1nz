@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.8.3
+Built-By: player
+Build-Jdk: 11.0.18
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: com.api.Starter
+Spring-Boot-Version: 2.6.1
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx
+Spring-Boot-Layers-Index: BOOT-INF/layers.idx
+

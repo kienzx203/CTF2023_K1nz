@@ -1,0 +1,2 @@
+tjctf{fake_flag}
+//https://book.hacktricks.xyz/generic-methodologies-and-resources/python/bypass-python-sandboxes

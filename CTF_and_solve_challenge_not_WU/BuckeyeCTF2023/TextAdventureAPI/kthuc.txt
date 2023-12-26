@@ -1,0 +1,13 @@
+Exploiting Python pickles 
+
+Trong python có thể sử dụng SERIALIZE object bằng pickles.dump()
+
+
+import pickle
+pickle.dumps(['pickle', 'me', 1, 2, 3])
+
+-> b'\x80\x04\x95\x19\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x06pickle\x94\x8c\x02me\x94K\x01K\x02K\x03e.'
+
+import pickle
+pickle.loads(b'\x80\x04\x95\x19\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x06pickle\x94\x8c\x02me\x94K\x01K\x02K\x03e.')
+['pickle', 'me', 1, 2, 3]

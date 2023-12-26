@@ -1,0 +1,1 @@
+select 2 from (select "x","y","z" union select * from quibuu where id=1337) as k where substr(k.z,1,1)='I';

